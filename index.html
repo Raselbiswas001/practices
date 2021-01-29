@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="Viewport" content="width=width-device initial-scale=1.0">
+	<title>Element practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		table, th, td {
+       border: 1px solid black;
+      }
+
+	</style>
+</head>
+<body>
+
+ <h1><!--this is comment tag--></h1>
+
+ <a href="https://www.facebook.com/raselbiswas347">Facebook</a><br>
+
+ <abbr title="International Cricket Council">ICC</abbr><br>
+
+ <address>
+ 	written by <a href="rjrussel347@gmail.com">Rasel Biswas</a><br>
+ 	Visit us at:<br>
+ 	Example.com:<br>
+ 	Jashore,barandipara
+
+ </address>
+
+ <img src="images/work.jpg" alt="laptopmobile" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+<article>
+	<h2>CSS</h2>
+	<p>Cascading Style Sheet</p>
+</article>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<audio controls>
+  <source src="allahuakbar.ogg" type="audio/ogg">
+  <source src="audio/allahuakbar.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio><br>
+
+<b>This is bold text</b>
+
+<p><a href="tags/tag_base.asp">HTML base tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+
+<p>In the example below, usernames are shown along with the number of points in a contest. If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").</p>
+
+<ul>
+ <li>User <bdi>hrefs</bdi>: 60 points</li>
+ <li>User <bdi>jdoe</bdi>: 80 points</li>
+ <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
+
+<p>This is paragraph element</p>
+<p><bdo dir="rtl">This is paragraph element</bdo></p>
+
+<p>Here is a quote from WWF's website:</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+</blockquote>
+
+<button type="button">Read me</button>
+
+<h1>The canvas element</h1>
+
+<canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 80, 100);
+</script>
+
+<h1>This is caption</h1>
+<table>
+	 <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+
+	<caption>Monthly Salary</caption>
+    
+    <tr>
+        <th>Name</th>
+	    <th>Salary</th>
+    </tr>
+    <tr>
+    	<th>Rohim</th>
+    	<th>Korim</th>
+    </tr>
+	<tr>
+		<th>7000</th>
+		<th>10000</th>
+	</tr>
+
+
+</table>
+
+<h1>The code element</h1>
+
+<p>The HTML <code>button</code>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+
+<p>The CSS <code>background-color</code> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+<h1>The data element</h1>
+
+<ul>
+	<li><data value="21053">Cricket</data></li>
+	<li><data value="21054">Football</data></li>
+	<li><data value="21055">Badminton</data></li>
+</ul>
+
+<form action="/action_page.php" method="get">
+
+
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+	<option value="Opera">
+	<option value="Chrome">
+	<option value="Mozila">	
+	<option value="Edge">	
+</datalist>
+<button>Submit</button>
+
+</form>
+<p><strong>Note:</strong> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+
+<dl>
+	<dt>Apple</dt>
+	<dd>Orange</dd>
+	<dt>Strawberry</dt>
+	<dd>Mango</dd>
+</dl>
+
+<h1>The delete element</h1>
+
+<p>My favourite color is <del>Blue</del><ins>Black</ins></p>
+
+<h2>The details element</h2>
+
+<details>
+	<summary>Paragraph</summary>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</details>
+
+<h4>The dfn element</h4>
+
+<p><dfn>HTML</dfn> is Hypertext Markup Language</p>
+
+<h1>The dialog element</h1>
+
+<p>This is some text.</p>
+
+<p>This is some text.</p>
+
+<dialog open>This is an open dialog window</dialog>
+
+<p>This is some text.</p>
+
+<p>This is some text.</p>
+
+<p><b>Note:</b> The dialog tag is not supported in Safari and Edge (prior version 79).</p>
+
+
+<h4>The div element</h4>
+
+<div class="div-item">
+	<h3>This is a div heading element</h3>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+
+</div>
+
+<h3>The em element</h3>
+ 
+ <h6>Lorem Ipsum is simply dummy text of the <em>printing</em></h6>
+
+<h3>The embed element</h3>
+
+<embed type="images/winter.jpg" src="images/winter.jpg" width="300" height="200">
+
+
+<h3>the fieldset element</h3>
+
+<form action="/action_page.php">
+	<fieldset>
+		<legend>Personality</legend>
+		<label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname"><br><br>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname"><br><br>
+        
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday" id="birthday"><br><br>
+        <input type="Submit" value="Submit">
+
+
+
+
+
+	</fieldset>
+</form>
+
+<h3>The figure and figcaption element</h3>
+
+<figure><img src="images/winter.jpg" alt="winter"></figure>
+<figcaption>Fig1. White & Brown House</figcaption>
+
+
+	
+<h3>The footer element</h3>
+<footer>
+
+<h4>Author<br>
+<a href="mailto:rjrussel347@gmail.com">rjrussel347@gmail,com</a></h4>
+
+</footer>
+
+<h3>The form element</h3>
+
+<form action="/action_page.php">
+
+	<label for="name">Name</label>
+	<input type="text" name="name" id="name"><br><br>
+	<label for="name">Roll</label>
+	<input type="number" name="roll" id="roll"><br><br>
+	<label for="name">Class</label>
+	<input type="text" name="class" id="class"><br><br>
+	<input type="submit" value="Submit">
+
+	
+</form>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<hr>
+
+<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
